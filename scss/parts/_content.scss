@@ -72,12 +72,14 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
+    box-shadow: 1px 6px 10px 2px rgba(0, 0, 0, 0.75);
 }
 
 .gallery-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
 }
 
 .gallery-item__big--one {

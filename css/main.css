@@ -235,6 +235,8 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
+  -webkit-box-shadow: 1px 6px 10px 2px rgba(0, 0, 0, 0.75);
+          box-shadow: 1px 6px 10px 2px rgba(0, 0, 0, 0.75);
 }
 
 .gallery-item img {
