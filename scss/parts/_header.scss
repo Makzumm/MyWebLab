@@ -1,0 +1,53 @@
+.header {
+    position: sticky;
+    top: 0;
+    padding: 15px;
+
+    background: linear-gradient(45deg, rgb(173, 148, 249) 0%, rgba(43, 184, 170, 1) 30%);
+
+    display: grid;
+    grid-template: 1fr / 1fr minmax(auto, 300px);
+
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 44px;
+    color: #fff;
+    font-family: 'Edu QLD Beginner';
+    transition: 800ms ease;
+}
+
+.header-list {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.header-list__link-one,
+.header-list__link-two,
+.header-list__link-three {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    transition: color .4s ease-in-out;
+    transition: 600ms ease;
+}
+
+.header-list__link-three {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.header-list__link-one:hover,
+.header-list__link-two:hover,
+.header-list__link-three:hover {
+    color: rgb(255, 130, 213);
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Playground</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@500&family=Kanit:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <a href="./index.html" class="header__logo">MyWebLab</a>
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-list__item">
+              <a href="./index.html" class="header-list__link-one">Main</a>
+            </li>
+            <li class="header-list__item">
+              <a href="./photo-gallery.html" class="header-list__link-two">
+                More photos
+              </a>
+            </li>
+            <li class="header-list__item">
+              <button
+                data-modal-open
+                type="button"
+                class="header-list__link-three"
+              >
+                Bio
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-two">
+        <section class="gallery-section">
+          <div class="gallery-container">
+            <div class="thumb-wrapper thumb-wrapper1">
+              <img src="./img/27.jpg" alt="Picture" />
+            </div>
+            <div class="thumb-wrapper thumb-wrapper2">
+              <img src="./img/14.jpg" alt="Picture" />
+            </div>
+            <div class="thumb-wrapper thumb-wrapper3">
+              <img src="./img/15.jpg" alt="Picture" />
+            </div>
+            <div class="thumb-wrapper thumb-wrapper4">
+              <img src="./img/16.jpg" alt="Picture" />
+            </div>
+            <div class="thumb-wrapper thumb-wrapper5">
+              <img src="./img/17.jpg" alt="Picture" />
+            </div>
+            <div class="thumb-wrapper thumb-wrapper6">
+              <img src="./img/31.jpg" alt="Picture" />
+            </div>
+            <div class="thumb-wrapper thumb-wrapper7">
+              <img src="./img/19.jpg" alt="Picture" />
+            </div>
+            <div class="thumb-wrapper thumb-wrapper8">
+              <img src="./img/20.jpg" alt="Picture" />
+            </div>
+            <div class="thumb-wrapper thumb-wrapper9">
+              <img src="./img/33.jfif" alt="Picture" />
+            </div>
+            <div class="thumb-wrapper thumb-wrapper10">
+              <img src="./img/22.jpg" alt="Picture" />
+            </div>
+            <div class="thumb-wrapper thumb-wrapper11">
+              <img src="./img/23.jpg" alt="Picture" />
+            </div>
+            <div class="thumb-wrapper thumb-wrapper12">
+              <img src="./img/24.jpg" alt="Picture" />
+            </div>
+            <div class="thumb-wrapper thumb-wrapper13">
+              <img src="./img/25.jpg" alt="Picture" />
+            </div>
+            <div class="thumb-wrapper thumb-wrapper14">
+              <img src="./img/26.jpg" alt="Picture" />
+            </div>
+            <div class="thumb-wrapper thumb-wrapper15">
+              <img src="./img/34.jpg" alt="Picture" />
+            </div>
+            <div class="thumb-wrapper thumb-wrapper16">
+              <img src="./img/16.jpg" alt="Picture" />
+            </div>
+            <div class="thumb-wrapper thumb-wrapper17">
+              <img src="./img/12.jpg" alt="Picture" />
+            </div>
+            <div class="thumb-wrapper thumb-wrapper18">
+              <img src="./img/18.jpg" alt="Picture" />
+            </div>
+            <div class="thumb-wrapper thumb-wrapper19">
+              <img src="./img/35.jpg" alt="Picture" />
+            </div>
+            <div class="thumb-wrapper thumb-wrapper20">
+              <img src="./img/36.jfif" alt="Picture" />
+            </div>
+            <div class="thumb-wrapper thumb-wrapper21">
+              <img src="./img/37.jpg" alt="Picture" />
+            </div>
+            <div class="thumb-wrapper thumb-wrapper22">
+              <img src="./img/38.jpg" alt="Picture" />
+            </div>
+            <div class="thumb-wrapper thumb-wrapper23">
+              <img src="./img/39.jfif" alt="Picture" />
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-container">
+          <ul class="footer-container__list">
+            <li class="footer-container__list">
+              <a class="footer-container__link">Link footer</a>
+            </li>
+            <li class="footer-container__list">
+              <a class="footer-container__link">Link footer</a>
+            </li>
+            <li class="footer-container__list">
+              <a class="footer-container__link">Link footer</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <div data-modal class="bio-backdrop is-invisible">
+      <div class="bio-modal">
+        <button data-modal-close class="bio-modal__close-btn">X</button>
+        <h2 class="bio-modal__title">About this website</h2>
+        <p class="bio-modal__txt">
+          Personally, this website was created to train my skills with grid and
+          just to practice coding. Hope you enjoyed!
+        </p>
+        <p class="bio-modal__example-txt">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
+          distinctio in sapiente nam adipisci facere ipsa repellendus quam
+          accusamus autem, exercitationem optio neque, dolor qui, itaque eveniet
+          laborum facilis corrupti.
+        </p>
+      </div>
+    </div>
+    <script src="./js/bio.js"></script>
+    <script src="./js/scroll.js"></script>
+  </body>
+</html>

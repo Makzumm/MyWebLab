@@ -1,0 +1,23 @@
+.footer {
+    padding: 20px;
+    background: linear-gradient(270deg, rgb(173, 148, 249) 0%, rgba(43, 184, 170, 1) 30%);
+}
+
+.footer-container__list {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    grid-template-rows: 1fr;
+    justify-content: end;
+}
+
+.footer-container__link {
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: color 800ms ease;
+}
+
+.footer-container__link:hover {
+    color: rgb(157, 74, 129);
+}

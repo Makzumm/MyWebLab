@@ -1,0 +1,78 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+/* Класс для обнуления базовых свойств у списков (ul) */
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Класс для обнуления базовых свойств у ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Свойства для корректного отображения картинок */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Свойства для обнуления курсива у address */
+address {
+    font-style: normal;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background: linear-gradient(45deg, rgba(82, 58, 180, 1) 0%, rgba(50, 182, 138, 1) 31%, rgb(27, 204, 204) 61%, rgba(182, 43, 184, 1) 87%);
+    background-size: 200% 200%;
+    animation: bgColor 10s ease-in-out infinite alternate;
+}
+
+@keyframes bgColor {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 50% 100%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.wrapper {
+    min-height: 100%;
+
+    display: grid;
+
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}

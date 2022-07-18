@@ -1,0 +1,69 @@
+.body-modal-open {
+    overflow: hidden;
+}
+
+.is-invisible {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.bio-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(63, 63, 63, 0.5);
+    transition: 400ms ease;
+}
+
+.bio-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: minmax(auto, 1fr) 1fr 1fr;
+    grid-template-rows: minmax(auto, 80px);
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.bio-modal__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+.bio-modal__close-btn:hover {
+    color: rgb(245, 106, 217);
+}
+
+.bio-modal__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Edu QLD Beginner';
+    color: black;
+}
+
+.bio-modal__txt {
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    font-size: 18px;
+}
+
+.bio-modal__example-txt {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Playground</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@500&family=Kanit:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body class="body">
+    <div class="wrapper">
+      <header class="header">
+        <a href="./index.html" class="header__logo">MyWebLab</a>
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-list__item">
+              <a href="./index.html" class="header-list__link-one">Main</a>
+            </li>
+            <li class="header-list__item">
+              <a href="./photo-gallery.html" class="header-list__link-two">
+                More photos
+              </a>
+            </li>
+            <li class="header-list__item">
+              <button
+                data-modal-open
+                type="button"
+                class="header-list__link-three"
+              >
+                Bio
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <aside class="sidebar">
+          <nav class="sidebar__menu">
+            <ul class="sidebar__list">
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">Instagram</a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">Twitter</a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">Facebook</a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">Github</a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">LinkedIn</a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+        <section class="content">
+          <h1 class="content__title">Welcome</h1>
+          <p class="content__txt">
+            I collected my favorite photos in this website to show them to you,
+            dear visitor! <br />
+            Enjoy!
+          </p>
+          <div class="content__gallery garelly">
+            <div class="gallery-item">
+              <img src="./img/1.jpg" alt="Picture" />
+            </div>
+            <div class="gallery-item gallery-item__big--one">
+              <img src="./img/7.jpg" alt="Picture" />
+            </div>
+            <div class="gallery-item">
+              <img src="./img/3.jpg" alt="Picture" />
+            </div>
+            <div class="gallery-item">
+              <img src="./img/4.jpg" alt="Picture" />
+            </div>
+            <div class="gallery-item">
+              <img src="./img/5.jpg" alt="Picture" />
+            </div>
+            <div class="gallery-item gallery-item__big--two">
+              <img src="./img/6.jpg" alt="Picture" />
+            </div>
+            <div class="gallery-item">
+              <img src="./img/10.jpg" alt="Picture" />
+            </div>
+            <div class="gallery-item gallery-item">
+              <img src="./img/2.png" alt="Picture" />
+            </div>
+            <div class="gallery-item">
+              <img src="./img/11.jpg" alt="Picture" />
+            </div>
+            <div class="gallery-item gallery-item__big--three">
+              <img src="./img/8.jpg" alt="Picture" />
+            </div>
+            <div class="gallery-item gallery-item__big--four">
+              <img src="./img/9.jpg" alt="Picture" />
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-container">
+          <ul class="footer-container__list">
+            <li class="footer-container__list">
+              <a class="footer-container__link">Link footer</a>
+            </li>
+            <li class="footer-container__list">
+              <a class="footer-container__link">Link footer</a>
+            </li>
+            <li class="footer-container__list">
+              <a class="footer-container__link">Link footer</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <div data-modal class="bio-backdrop is-invisible">
+      <div class="bio-modal">
+        <button data-modal-close class="bio-modal__close-btn">X</button>
+        <h2 class="bio-modal__title">About this website</h2>
+        <p class="bio-modal__txt">
+          Personally, this website was created to train my skills with grid and
+          just to practice coding. Hope you enjoyed!
+        </p>
+        <p class="bio-modal__example-txt">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
+          distinctio in sapiente nam adipisci facere ipsa repellendus quam
+          accusamus autem, exercitationem optio neque, dolor qui, itaque eveniet
+          laborum facilis corrupti.
+        </p>
+      </div>
+    </div>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/bio.js"></script>
+  </body>
+</html>
