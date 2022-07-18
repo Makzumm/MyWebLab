@@ -235,6 +235,9 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
+}
+
+.gallery-item {
   -webkit-box-shadow: 1px 6px 10px 2px rgba(0, 0, 0, 0.75);
           box-shadow: 1px 6px 10px 2px rgba(0, 0, 0, 0.75);
 }
@@ -263,6 +266,30 @@ body {
   grid-row-end: 8;
   grid-column-start: 1;
   grid-column-end: 3;
+}
+
+.content__link {
+  display: inline-block;
+  text-align: center;
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  font-weight: 700;
+  font-size: 28px;
+  color: #fff;
+  -webkit-transition: color 700ms;
+  transition: color 700ms;
+}
+
+.content__link:hover {
+  color: rgb(255, 130, 213);
+}
+
+.content__txt--two {
+  font-size: 32px;
+  text-align: center;
+  color: #fff;
+  margin-top: 32px;
 }
 
 .footer {
